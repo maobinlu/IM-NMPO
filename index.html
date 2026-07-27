@@ -1,312 +1,252 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="description"
-        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
-  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+  <meta
+    name="description"
+    content="Project page for IM-NMPO, an internal model-based nonlinear model predictive optimization framework for robust optimal agile quadrotor flight."
+  >
+  <meta
+    name="keywords"
+    content="IM-NMPO, quadrotor, agile flight, nonlinear model predictive control, disturbance rejection, time-optimal planning"
+  >
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Optimal Planning and Control for Agile Flight of Quadrotors: An Internal Model Based Nonlinear Model Predictive Optimization Approach
-  </title>
+  <meta name="theme-color" content="#f7f7f3">
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
+  <title>Robust Optimal Agile Flight of Quadrotors | IM-NMPO</title>
 
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-
-    gtag('js', new Date());
-
-    gtag('config', 'G-PYVRSFMDRL');
-  </script>
-
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
-
-  <link rel="stylesheet" href="./static/css/bulma.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=DM+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
   <link rel="icon" href="./static/images/favicon.svg">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
-  <script src="./static/js/bulma-carousel.min.js"></script>
-  <script src="./static/js/bulma-slider.min.js"></script>
-  <script src="./static/js/index.js"></script>
+  <script defer src="./static/js/index.js"></script>
 </head>
+
 <body>
+  <header class="site-header">
+    <nav class="site-nav page-shell" aria-label="Primary navigation">
+      <a class="site-mark" href="#top" aria-label="IM-NMPO home">
+        <span class="site-mark-dot" aria-hidden="true"></span>
+        IM-NMPO
+      </a>
+      <div class="nav-links">
+        <a href="#video">Video</a>
+        <a href="#abstract">Abstract</a>
+        <a href="#framework">Framework</a>
+        <a href="#citation">Citation</a>
+      </div>
+    </nav>
+  </header>
 
-<nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-</nav>
+  <main id="top">
+    <section class="hero-section">
+      <div class="page-shell hero-content">
+        <p class="eyebrow">IEEE Transactions on Robotics · 2026</p>
+        <h1>
+          Robust Optimal Agile Flight of Quadrotors:
+          <span>An Internal Model-Based Nonlinear Model Predictive Optimization Approach</span>
+        </h1>
 
-<section class="hero">
-  <div class="hero-body">
-    <div class="container ">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Optimal Planning and Control for Agile Flight of Quadrotors: An Internal Model Based Nonlinear Model Predictive Optimization Approach
-          </h1>
-          <div class="is-size-4 publication-authors">
-            <span class="author-block">
-             <a href="https://kingstrbit.github.io/kingstrong/">Qiang Wang</a><sup>1</sup>,</span>
-            </span>
-            <span class="author-block">
-             <a href="https://smithengineering.queensu.ca/directory/faculty/martin-guay.html">Martin Guay</a><sup>2</sup>,</span>
-            </span>
-            <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=KYEi4LYAAAAJ&hl=en&oi=ao">Fang Deng</a><sup>1</sup>,</span>
-            </span>
-            <span class="author-block">
-              <a href="https://www.researchgate.net/profile/Jie-Chen-138">Jie Chen</a><sup>1</sup>,</span>
-            </span>
-            <span class="author-block">
-              <a href="https://maobinlu.github.io/">Maobin Lu</a><sup>1*</sup>,</span>
-          </div>
+        <div class="authors" aria-label="Authors">
+          <a href="https://kingstrbit.github.io/kingstrong/">Qiang Wang<sup>1</sup></a>
+          <a href="https://smithengineering.queensu.ca/directory/faculty/martin-guay.html">Martin Guay<sup>2</sup></a>
+          <a href="https://scholar.google.com/citations?user=KYEi4LYAAAAJ&hl=en&oi=ao">Fang Deng<sup>1</sup></a>
+          <a href="https://www.researchgate.net/profile/Jie-Chen-138">Jie Chen<sup>1,3</sup></a>
+          <a href="https://maobinlu.github.io/">Maobin Lu<sup>1,*</sup></a>
+        </div>
 
-          <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup> Beijing Institute of Technology</span> 
-            <span class="author-block"><sup>2</sup> Queen's University</span>
-          </div>
-          <div class="is-size-6 publication-authors">
-            <span class="author-block"><sup>*</sup> Corresponding author</span>
-          </div>
-          <div class="column has-text-centered">
-            <div class="publication-links">
-              <span class="link-block">
-                <a href="https://maobinlu.github.io/"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-home"></i>
-                  </span>
-                  <span>Team</span>
-                  </a>
-              </span>
-            </div>
+        <div class="affiliations">
+          <p><sup>1</sup> Beijing Institute of Technology, Beijing 100081, China</p>
+          <p><sup>2</sup> Queen’s University, Kingston, ON K7L 3N6, Canada</p>
+          <p><sup>3</sup> Harbin Institute of Technology, Harbin 150001, China</p>
+          <p class="corresponding"><sup>*</sup> Corresponding author</p>
+        </div>
 
-          </div>
+        <div class="hero-links" aria-label="Project links">
+          <a class="pill-button pill-button-dark" href="./WQ__Robust%20Optimal%20Agile%20Flight%20of%20Quadrotors.pdf">
+            <i class="fas fa-file-pdf" aria-hidden="true"></i>
+            Paper
+          </a>
+          <a class="pill-button" href="https://maobinlu.github.io/">
+            <i class="fas fa-users" aria-hidden="true"></i>
+            Team
+          </a>
+          <a class="pill-button" href="https://github.com/maobinlu">
+            <i class="fab fa-github" aria-hidden="true"></i>
+            GitHub
+          </a>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<section class="hero">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-        <source src="./static/videos/Video_IMNMPC.mp4"
-                type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        <!-- <span class="dnerf">IM-NMPO </span>Demonstration -->
-      </h2>
-    </div>
-  </div>
-</section>
-
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-2"> Simulation Experiments</h2>
-      </div>
-    </div>
-    <h2 class="title is-4">(a) Evaluation for Performance of Tracking and Planning</h2>
-    <p style="font-size: 21px">
-      We compare the robustness of our IM-NMPO  with 
-      the NMPC and INDI-NMPC subject to unknown persistent external disturbances in (i - iii).
-      Subsequently, we demonstrate the high-efficiency time-optimal replanning ablility of IM-NMPO in (iv).
-    </p>
-    <div class="columns is-centered">
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-4">(i) INDI-NMPC</h4>
-          <video id="dollyzoom" autoplay controls muted loop playsinline width="500%" height="100%">
-            <source src="./static/videos/INDI-NMPC_CUT.mp4"
-                    type="video/mp4">
+    <section class="section-block main-video-section" id="video">
+      <div class="page-shell">
+        <div class="section-heading compact-heading">
+          <h2>Video</h2>
+        </div>
+        <div class="main-video-frame">
+          <video
+            id="main-video"
+            autoplay
+            controls
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            aria-label="IM-NMPO full project video"
+          >
+            <source src="./static/videos/Video_IMNMPC.mp4" type="video/mp4">
+            Your browser does not support the video element.
           </video>
         </div>
       </div>
-      <div class="column">
-        <h2 class="title is-4">(ii) NMPC</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <video id="matting-video" controls playsinline   height="100%">
-              <source src="./static/videos/nmpc_cut.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-        </div>
-      </div>
-    </div>
+    </section>
 
-    <div class="columns is-centered">
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-4">(iii) IM-NMPO</h2>
-          <video id="dollyzoom" autoplay controls muted loop playsinline width="500%" height="100%">
-            <source src="./static/videos/IMNMPC_CUT.mp4"
-                    type="video/mp4">
-          </video>
+    <section class="section-block abstract-section" id="abstract">
+      <div class="page-shell">
+        <div class="section-heading">
+          <p class="eyebrow">The work in brief</p>
+          <h2>Abstract</h2>
         </div>
-      </div>
-      <div class="column">
-        <h2 class="title is-4">(iv) Time-optimal online replanning</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <video id="matting-video" controls playsinline   height="100%">
-              <source src="./static/videos/replan-CUT.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <p style="font-size: 18px">
-      IM-NMPO effectively compensates for unknown wind disturbances
-      in real time and generate high-efficiency time-optimal trajectories on-the-fly.
-    </p>
-    <br>
-    <br>
-    <div class="columns is-centered">
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-4">(b) 2024 DJI Robomaster Intelligent UAV Championship for Planning and Control</h2>
-          <video id="matting-video" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/DJI_PC.mp4"
-                    type="video/mp4">
-          </video>
-          <p style="font-size: 18px">
-            Our IM-NMPO framework was successfully implemented in the 2024 DJI Robomaster Intelligent UAV Championship for Planning and Control of Quadrotors,
-    where it completed the challenging racing courses with speeds up to 23.3 m/s, ranking  first and finishing
-    in less than one-third of the time taken by the second-place.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="columns is-centered">
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-4">(c) 2024 DJI Robomaster Intelligent UAV Championship for Autonomous Perception and Racing</h2>
-          <video id="matting-video" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/EVNMPC.mp4"
-                    type="video/mp4">
-          </video>
-          <p style="font-size: 18px">
-            IM-NMPO can rapidly replan new time-optimal trajectories  based on real-time visual detection results, 
-            completing the course in 72 seconds  with a maximum velocity of 10.9 m/s, outperforming  the best record of 74 s.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-2"> Real-world Experiments</h2>
-      </div>
-    </div>
-    <h2 class="title is-4">(a) Evaluation for Robustness against disturbances and paramemter uncertainties </h2>
-
-
-    <div class="columns is-centered">
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-4">(i) External Disturbances</h2>
-          <video id="dollyzoom" autoplay controls muted loop playsinline width="500" height="100%">
-            <source src="./static/videos/Disturbance_exp.mp4"
-                    type="video/mp4">
-          </video>
+        <div class="abstract-copy">
           <p>
-            IM-NMPO effectively compensates for unknown wind disturbances
-            in real time, achieving robust and agile trajectory tracking
-            performance.  
+            Achieving robust agile quadrotor flight under unknown external disturbances and
+            parametric uncertainty remains a significant challenge. Inspired by robust output
+            regulation theory, this paper proposes IM-NMPO, an Internal Model-based Nonlinear
+            Model Predictive Optimization framework for robust optimal planning and control
+            during agile flight. The core insight is the systematic decoupling of uncertain
+            dynamics from the optimization loop via the internal model principle (IMP), enabling
+            real-time disturbance learning and rejection while reducing reliance on high-fidelity
+            physical models. This allows both time-optimal planning and nonlinear model predictive
+            control (NMPC) to operate on the same disturbance-decoupled nominal dynamics.
+          </p>
+          <p>
+            The proposed framework comprises three main components: translational and rotational
+            nonlinear internal model compensators for real-time disturbance rejection, an NMPC
+            optimization stabilizer for constrained agile trajectory tracking, and a
+            receding-horizon polynomial waypoint allocation module for efficient online
+            time-optimal reference generation. Robust constraint satisfaction, recursive
+            feasibility, and asymptotic stability are guaranteed through rigorous theoretical
+            analysis.
+          </p>
+          <p>
+            The effectiveness and generalizability are validated through extensive flight
+            experiments under various disturbances, including unknown payloads, persistent
+            fan-induced winds, and time-varying gusts, across quadrotors with different
+            wheelbases. The framework was successfully deployed in the 2024 DJI Robomaster
+            Intelligent MAV Championship for Planning and Control of Quadrotors, where it
+            completed challenging racing courses at speeds up to 23.3 m/s, ranking first and
+            finishing in less than one-third of the time taken by the second-place.
           </p>
         </div>
-      </div>
-      <div class="column">
-        <h2 class="title is-4">(ii) Model uncertainties</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <video id="matting-video" controls playsinline   height="100%">
-              <source src="./static/videos/model_uncertainties.mp4"
-                      type="video/mp4">
-            </video>
-            <p>
-              IM-NMPO  can rapidly learn and adapt to  unknown varying inertia model uncertainties.
-            </p>
-          </div>
 
+        <div class="highlights" aria-label="Key results">
+          <article class="highlight" data-index="01">
+            <strong class="metric-main">23.3 m/s</strong>
+            <span class="metric-label">Top race speed</span>
+          </article>
+          <article class="highlight" data-index="02">
+            <strong class="metric-main">&lt; 1/3</strong>
+            <span class="metric-label">Runner-up completion time</span>
+          </article>
+          <article class="highlight" data-index="03">
+            <strong class="metric-main">Real-time</strong>
+            <span class="metric-label">Disturbance learning and rejection</span>
+          </article>
+          <article class="highlight" data-index="04">
+            <strong class="metric-main">Robust</strong>
+            <span class="metric-label">Theoretical guarantee</span>
+          </article>
         </div>
       </div>
-    </div>
-    <div class="columns is-centered">
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-4">(b) Drone Laboratory Racing With Wind Zone</h2>
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/racing_lab.mp4"
-                    type="video/mp4">
-          </video>
-          <p style="font-size: 18px">
-            IM-NMPO enables the  quadrotor to operate  at the actuator 
-            limit while ensures safety and constraints satisfaction, even in the presence of strong unpredictable winds. 
-          </p>
+    </section>
+
+    <section class="section-block framework-section" id="framework">
+      <div class="page-shell">
+        <div class="section-heading">
+          <p class="eyebrow">System overview</p>
+          <h2>IM-NMPO Framework</h2>
+        </div>
+
+        <figure class="framework-figure">
+          <a
+            class="framework-image-link"
+            href="./static/images/Framework_first.pdf"
+            aria-label="Open the original IM-NMPO framework figure as a PDF"
+          >
+            <img
+              src="./static/images/Framework_first.svg"
+              alt="Overview of the IM-NMPO framework for robust optimal agile quadrotor flight"
+            >
+          </a>
+          <figcaption>
+            <strong><span class="math-cal">IM</span>-NMPO framework:</strong>
+            1) two classes of nonlinear internal model compensators; 2) a polynomial-based
+            robust time-optimal online planner; 3) a nominal system-based NMPC optimization
+            stabilizer. This systematic design certifies end-to-end robust constraint
+            satisfaction, recursive feasibility, and asymptotic stability for the original
+            uncertain system.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section-block citation-section" id="citation">
+      <div class="page-shell narrow-shell">
+        <div class="section-heading">
+          <p class="eyebrow">Reference this work</p>
+          <h2>Citation</h2>
+        </div>
+
+        <div class="citation-card">
+          <button class="copy-button" id="copy-citation" type="button">
+            <i class="far fa-copy" aria-hidden="true"></i>
+            <span>Copy</span>
+          </button>
+          <pre id="bibtex"><code>@article{wang2026robust,
+  title   = {Robust Optimal Agile Flight of Quadrotors: An Internal Model-Based Nonlinear Model Predictive Optimization Approach},
+  author  = {Wang, Qiang and Guay, Martin and Deng, Fang and Chen, Jie and Lu, Maobin},
+  journal = {IEEE Transactions on Robotics},
+  year    = {2026},
+  note    = {Accepted for publication}
+}</code></pre>
         </div>
       </div>
-    </div>
-    <div class="columns is-centered">
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-4">(c) Cluttered Dynamic Environments Racing With Wind Zone </h2>
-          <video id="matting-video" autoplay controls muted loop playsinline  height="100%">
-            <source src="./static/videos/classic_DJI.mp4"
-                    type="video/mp4">
-          </video>
-          <p style="font-size: 18px">
-            IM-NMPO has a robust planning and control ability in cluttered dynamic environments with unknown disturbances.
-          </p>
+    </section>
+
+    <section class="section-block acknowledgements-section" id="acknowledgements">
+      <div class="page-shell narrow-shell">
+        <div class="section-heading">
+          <p class="eyebrow">Support</p>
+          <h2>Acknowledgements</h2>
         </div>
+        <p>
+          This work was supported in part by the National Natural Science Foundation of China
+          under Grant U25A20467 and Grant 62373058, and in part by the Beijing Natural Science
+          Foundation under Grant L233003.
+        </p>
       </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="page-shell footer-content">
+      <p>© 2026 IM-NMPO</p>
+      <p>
+        Page structure inspired by the
+        <a href="https://rpg.ifi.uzh.ch/marl/">RPG project page</a>
+        and adapted from
+        <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+      </p>
     </div>
-
-  </div>
-</section>
-
-
-<footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-          <p style="font-size: 20px">
-            This website borrowed from the <a rel="license"
-                                                href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-
+  </footer>
 </body>
 </html>
